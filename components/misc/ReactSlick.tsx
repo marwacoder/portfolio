@@ -2,8 +2,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import React,{useState} from 'react'
 import Slider from "react-slick";
-import ArrowBack from "../public/assets/icons/eva_arrow-back-fill.svg";
-import ArrowNext from "../public/assets/Icons/eva_arrow-next-fill.svg";
+import ArrowBack from "../../public/assets/icons/eva_arrow-back-fill.svg";
+import ArrowNext from "../../public/assets/Icons/eva_arrow-next-fill.svg";
 
 const experiences = [
     {
