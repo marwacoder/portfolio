@@ -2,7 +2,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import React,{useState} from 'react'
 
-import { GrLinkNext, GrLinkPrevious } from 'react-icons/gr'
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 import Slider from "react-slick";
 
 
@@ -101,7 +101,7 @@ export default function ReactSlick() {
              {experiences.map((ex, i)=>{
                 return (
                     <div key={i} className="px-3 text-left font-Poppins text-sm md:text-md lg:text-lg">
-                        <div className="border-2 border-gray-500 hover:border-secondary transition-all rounded-lg p-5 flex flex-col">
+                        <div className="border-2 border-secondary transition-all rounded-lg p-5 flex flex-col">
                     <div className=' md:text-xl font-bold '>{ex.company_name}</div>
                     <div className=' text-secondary'>
                      <div className='font-medium'>{ex.role}</div>
@@ -120,24 +120,25 @@ export default function ReactSlick() {
     
         </Slider>
           <div className="flex w-full items-center justify-center">
-            {/* <hr className='bg-secondary border-2 w-full' /> */}
-              <div className="flex flex-none justify-between w-auto mt-14">
+              <hr className='bg-secondary border-2 w-full mt-12' />
+              <div className="flex  justify-between w-auto mt-14">
                   <div
                       className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickPrev}
                   >
-                      <GrLinkPrevious className='h-6 w-6' />
+                      <GrFormPrevious className='h-8 w-8 text-secondary' />
                   </div>
                   
                   <div
-                      className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
+                      className="flex items-center mx-4 justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickNext}
                   >
-                      <GrLinkNext className='h-6 w-6' />
+                      <GrFormNext className='h-8 w-8 text-secondary'/>
 
                   </div>
                   {/* <hr className='bg-secondary border-2 w-full' /> */}
               </div>
+              <hr className='bg-secondary border-2 w-full mt-12' />
           </div>
       </>
   )
