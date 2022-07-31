@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import { FaLinkedin, FaGithub, FaGitlab } from 'react-icons/fa'
+
 
 export default function About() {
   return (
@@ -12,9 +14,20 @@ export default function About() {
                   <h1 className='text-primary text-3xl font-bold lg:text-4xl xl:text-5xl'>Software Engineer</h1>
                   <h4 className=' pt-5  lg:text-2xl xl:3xl'>Dedicated software engineer with 4+ years of commercial application development expertise.To produce creative and cutting-edge business solutions for the amazing suite of clients inside its worldwide reach, I&#39;m eager to join a growing team. In prior jobs, I reduced downtime by 25% and secured 98 percent project completion on schedule. In addition, a substantial process bottleneck was found and overcome, resulting in a 35 percent increase in coding efficiency.</h4>
         </div>
-        <div className=' max-w-sm md:max-w-md'>
+        <div>
+           
+          <div className=' max-w-sm -z-20 md:max-w-md relative'>
+            
         <Image alt='pic'  src='/assets/images/image.png' width={'878px'} height={'1058px'}/>
         </div>
+          <div className='h-40 w-20 md:h-35 md:h-35 gap-5 flex-col bg-secondary ml-80 -mt-60 lg:md:ml-96  md:ml-60 z-20  flex justify-center items-center rounded-full'>
+            <FaGithub className=' cursor-pointer h-6 w-6 text-white-500'/>
+            <FaLinkedin className='cursor-pointer h-6 w-6 text-white-500' />
+            <FaGitlab className='cursor-pointer h-6 w-6 text-white-500' />
+          </div>
+
+        </div>
+        
     </div>
       </div>
   )
