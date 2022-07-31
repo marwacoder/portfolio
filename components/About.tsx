@@ -4,7 +4,7 @@ import React from 'react'
 export default function About() {
   return (
     <div className="max-w-screen-xl mt-32 px-8 xl:px-16 mx-auto font-Poppins" id="aboutme">
-          <div className='grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 md:gap-36 sm:grid-cols-2'>
+          <div className='grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 md:gap-32 sm:grid-cols-2'>
               <div className='leading-normal'>
                   <div className='text-2xl py-5 lg:pt-10  lg:text-3xl xl:text-4xl'><h3 className='text-secondary'>Hi i&#39;m</h3>
                   <h2><span className='text-secondary font-bold'>Jibril</span> Mohammed</h2></div>

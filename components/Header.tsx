@@ -14,7 +14,7 @@ export default function Header() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScrollActive(window.scrollY > 20);
+            setScrollActive(window.scrollY > 5);
         });
     }, []);
   return (
@@ -22,7 +22,7 @@ export default function Header() {
           <header className={"fixed top-0 w-full z-30 bg-gradient-to-r from-sky-blue to-white font-Poppins transition-all" +
               (scrollActive ? " shadow-md pt-0" : " pt-4")}>
           <nav className='max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4'>
-              <div className=" w-36 md:w-44 h-auto">
+              <div className=" w-32 md:w-40 h-auto">
                       <Image alt='logo' layout='responsive'  src='/assets/images/logo.png' width={'207px'} height={'63px'} />
               </div>
             <ul className='hidden lg:flex col-start-4 text-primary col-end-8 items-center'>

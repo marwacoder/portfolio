@@ -7,3 +7,9 @@
   src: url("../public//assets/fonts/Poppins-Regular.ttf");
 }
 
+*{
+  font-family: 'Poppins';
+}
+body {
+  background: linear-gradient(45deg, #C9D6FF, #E2E2E2);
+}
