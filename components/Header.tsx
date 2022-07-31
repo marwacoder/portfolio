@@ -22,7 +22,7 @@ export default function Header() {
               (scrollActive ? " shadow-md pt-0" : " pt-4")}>
           <nav className='max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4'>
               <div className="col-start-1 col-end-2  flex items-center">
-                  <Image  src='/assets/images/logo.png' width={'207px'} height={'63px'} />
+                  <Image alt='logo'  src='/assets/images/logo.png' width={'207px'} height={'63px'} />
               </div>
             <ul className='hidden lg:flex col-start-4 text-primary col-end-8 items-center'>
                 <LinkScroll
