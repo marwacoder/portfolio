@@ -10,7 +10,7 @@ export default function About() {
                   <h2><span className='text-secondary font-bold'>Jibril</span> Mohammed</h2></div>
                   
                   <h1 className='text-primary text-3xl font-bold lg:text-4xl xl:text-5xl'>Software Engineer</h1>
-                  <h4 className=' pt-5  lg:text-2xl xl:3xl'>Dedicated software engineer with 4+ years of commercial application development expertise.To produce creative and cutting-edge business solutions for the amazing suite of clients inside its worldwide reach, I&#39; m eager to join a growing team. In prior jobs, I reduced downtime by 25% and secured 98 percent project completion on schedule. In addition, a substantial process bottleneck was found and overcome, resulting in a 35 percent increase in coding efficiency.</h4>
+                  <h4 className=' pt-5  lg:text-2xl xl:3xl'>Dedicated software engineer with 4+ years of commercial application development expertise.To produce creative and cutting-edge business solutions for the amazing suite of clients inside its worldwide reach, I&#39;m eager to join a growing team. In prior jobs, I reduced downtime by 25% and secured 98 percent project completion on schedule. In addition, a substantial process bottleneck was found and overcome, resulting in a 35 percent increase in coding efficiency.</h4>
         </div>
         <div className=' max-w-sm md:max-w-md'>
         <Image alt='pic'  src='/assets/images/image.png' width={'878px'} height={'1058px'}/>
