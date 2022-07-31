@@ -116,7 +116,7 @@ export default function ReactSlick() {
              })} 
             
               
-       
+    
         </Slider>
           <div className="flex w-full items-center justify-center">
             {/* <hr className='bg-secondary border-2 w-full' /> */}
