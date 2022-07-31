@@ -1,9 +1,10 @@
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import React,{useState} from 'react'
+
+import { GrLinkNext, GrLinkPrevious } from 'react-icons/gr'
 import Slider from "react-slick";
-import ArrowBack from "../../public/assets/icons/eva_arrow-back-fill.svg";
-import ArrowNext from "../../public/assets/Icons/eva_arrow-next-fill.svg";
+
 
 const experiences = [
     {
@@ -125,14 +126,14 @@ export default function ReactSlick() {
                       className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickPrev}
                   >
-                      <ArrowBack className="h-6 w-6 " />
+                      <GrLinkPrevious className='h-6 w-6' />
                   </div>
                   
                   <div
                       className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickNext}
                   >
-                      <ArrowNext className="h-6 w-6" />
+                      <GrLinkNext className='h-6 w-6' />
 
                   </div>
                   {/* <hr className='bg-secondary border-2 w-full' /> */}
