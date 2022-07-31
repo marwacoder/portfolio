@@ -1,5 +1,5 @@
 import React from 'react'
-import Slick from './misc/React-Slick'
+import Slick from './React-Slick'
 
 export default function Resume() {
   return (
