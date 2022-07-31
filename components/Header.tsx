@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Image from 'next/image'
 import Button from './misc/Button'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 
 // Import react scroll
@@ -21,8 +22,8 @@ export default function Header() {
           <header className={"fixed top-0 w-full z-30 bg-gradient-to-r from-sky-blue to-white font-Poppins transition-all" +
               (scrollActive ? " shadow-md pt-0" : " pt-4")}>
           <nav className='max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4'>
-              <div className="col-start-1 col-end-2  flex items-center">
-                  <Image alt='logo'  src='/assets/images/logo.png' width={'207px'} height={'63px'} />
+              <div className=" w-36 md:w-44 h-auto">
+                      <Image alt='logo' layout='responsive'  src='/assets/images/logo.png' width={'207px'} height={'63px'} />
               </div>
             <ul className='hidden lg:flex col-start-4 text-primary col-end-8 items-center'>
                 <LinkScroll
@@ -105,6 +106,10 @@ export default function Header() {
             </ul>
                   <div className="hidden col-start-10 font-Poppins col-end-12 font-medium md:flex justify-end items-center">
                       <Button onClick={() => ''} addClass="text-secondary  bg-transparent hover:bg-secondary hover:text-primary">Resume </Button>
+
+                  </div>
+                  <div className='md:hidden right-0 col-start-10 font-Poppins col-end-12 font-medium flex justify-end items-center'>
+                      <GiHamburgerMenu className=' cursor-pointer text-secondary w-8 md:w-44 h-auto' />
 
                   </div>
         </nav>
