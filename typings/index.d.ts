@@ -9,3 +9,10 @@ export interface IButton {
   addClass: string,
   onClick: ReactEventHandler
 }
+
+export interface IInputField{
+  elementType: string,
+  valueType: string,
+  value: string,
+  label: string
+}
