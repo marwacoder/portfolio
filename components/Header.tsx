@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Button from './misc/Button'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GoCloudDownload, } from 'react-icons/go'
-import { AiOutlineClose } from 'react-icons/ai'
+import { GrClose } from 'react-icons/gr'
 
 
 // Import react scroll
@@ -128,7 +128,7 @@ export default function Header() {
 
                   </div>
                   <div className='md:hidden right-0 col-start-10 font-Poppins col-end-12 font-medium flex justify-end items-center'>
-                      {open ? <AiOutlineClose onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' /> : <GiHamburgerMenu onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />}
+                      {open ? <GrClose onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' /> : <GiHamburgerMenu onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />}
 
                   </div>
                

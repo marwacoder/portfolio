@@ -28,24 +28,22 @@ export default function Contact() {
         {/* first column */}
         <div className='text-primary  gap-3'>
             <div className=' font-bold my-5'>Get a question or proposal, or just want to say Hello? Please go ahead </div>
-            <div className='flex gap-3'>
+            <div className='flex mt-3 leading-normal gap-3'>
               <div><MdEmail className='h-6 w-6 text-secondary'/></div>
             <h2>jibrilmohammed39@gmail.com</h2>
           </div>
-            <div className='flex gap-3'>
+            <div className='flex mt-3 leading-normal gap-3'>
               <div><ImLocation2 className='h-6 w-6 text-secondary' /></div>
             <h2>NO. 2G Sani Street Off Catholic Church Ado, Karu L.G.A, Nasarawa State.</h2>
           </div>
-            <div className='flex gap-3'>
+            <div className='flex mt-3 gap-3'>
               <div><MdCall className='h-6 w-6 text-secondary' /></div>
             <h2>+234 8034074748, +234 7082227861</h2>
           </div>
         </div>
         <div>
-          <label htmlFor="">
-            
-            </label> 
-            <form action="">
+          
+            <form >
               <Input changed={onChangeHandler} elementType='input' value='' valueType='' label='Enter Full Name' />
               <Input changed={onChangeHandler} elementType='input' value='' valueType='' label='Enter Email Address' />
               <Input changed={onChangeHandler} elementType='textarea' value='' valueType='' label='Enter Message' />
