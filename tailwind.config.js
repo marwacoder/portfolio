@@ -19,13 +19,19 @@ module.exports = {
         primary:  '#023047',
         secondary: '#FB8500',
         'sky-blue': '#C9D6FF',
-        'to-white': '##E2E2E2'
+        'to-white': '##E2E2E2',
+         'drawer-from': 'rgba(255, 255, 255, 0.05),rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0)',
+        'drawer-to': 'rgba(255, 255, 255, 1)'
       },
       backgroundColor: {
         'from-sky-blue': '#C9D6FF',
-        'to-white': '##E2E2E2'
+        'to-white': '##E2E2E2',
+        'to-navy': '#152331',
+       
+        
       }
     },
+    
     fontFamily: {
         'Poppins': ['Poppins', 'sans-serif'] 
       },

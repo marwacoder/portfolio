@@ -2,15 +2,17 @@ import React,{useState, useEffect} from 'react'
 import Image from 'next/image'
 import Button from './misc/Button'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { GoCloudDownload } from 'react-icons/go'
 
 
 // Import react scroll
-import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkScroll, Button as ButtonScroll } from "react-scroll";
 
 export default function Header() {
 
     const [activeLink, setActiveLink] = useState<string>('');
     const [scrollActive, setScrollActive] = useState(false);
+    const [open, setOpen] = useState(false)
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -19,13 +21,16 @@ export default function Header() {
     }, []);
   return (
     <>
-          <header className={"fixed top-0 w-full z-30 bg-gradient-to-r from-sky-blue to-white font-Poppins transition-all" +
+          
+          <header className={"fixed top-0 md:backdrop-blur-none backdrop-blur-sm bg-white/30 bottom-0 w-full md:bottom-auto z-30 bg-gradient-to-r from-sky-blue to-white font-Poppins transition-all" +
               (scrollActive ? " shadow-md pt-0" : " pt-4")}>
           <nav className='max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4'>
               <div className=" w-32 md:w-40 h-auto">
                       <Image alt='logo' layout='responsive'  src='/assets/images/logo.png' width={'207px'} height={'63px'} />
               </div>
-            <ul className='hidden lg:flex col-start-4 text-primary col-end-8 items-center'>
+              
+                  
+            <ul className='block md:flex absolute font-bold md:font-normal md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center'>
                 <LinkScroll
               activeClass="active"
               to="aboutme"
@@ -37,7 +42,7 @@ export default function Header() {
                 setActiveLink("aboutme");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer animation-hover list-item relative" +
                 (activeLink === "aboutme"
                   ? " text-secondary animation-active "
                   : " text-black-500 hover:text-orange-400")
@@ -56,7 +61,7 @@ export default function Header() {
                           setActiveLink("resume");
                       }}
                       className={
-                          "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                          "px-4 py-2 mx-2 cursor-pointer animation-hover list-item relative" +
                           (activeLink === "resume"
                               ? " text-secondary animation-active "
                               : " text-black-500 hover:text-orange-400")
@@ -75,7 +80,7 @@ export default function Header() {
                           setActiveLink("portfolio");
                       }}
                       className={
-                          "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                          "px-4 py-2 mx-2 cursor-pointer animation-hover list-item relative" +
                           (activeLink === "portfolio"
                               ? " text-secondary animation-active "
                               : " text-black-500 hover:text-orange-400")
@@ -94,7 +99,7 @@ export default function Header() {
                           setActiveLink("contactme");
                       }}
                       className={
-                          "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                          "px-4 py-2 mx-2 cursor-pointer animation-hover list-item relative" +
                           (activeLink === "contactme"
                               ? " text-secondary animation-active "
                               : " text-black-500 hover:text-orange-400")
@@ -102,17 +107,32 @@ export default function Header() {
                   >
                      Contact me
                   </LinkScroll>
-            
+                  
+                      <div className='md:hidden list-item px-4 text-primary py-9 mx-2 cursor-pointer animation-hover  relative'>
+                          <p><span className='text-secondary py-2'>Say </span> Hello!</p>
+                          <p className='py-2'>jibrilmohammed39@gmail.com</p>
+                          <div className='  my-10'>
+                              <Button icon={<GoCloudDownload width={35} height={35} />} addClass=' rounded-none bg-primary  text-secondary' onClick={() => ''}>Resume</Button>
+
+                          </div>
+            </div>
+                      
             </ul>
+            
                   <div className="hidden col-start-10 font-Poppins col-end-12 font-medium md:flex justify-end items-center">
-                      <Button onClick={() => ''} addClass="text-secondary  bg-transparent hover:bg-secondary hover:text-primary">Resume </Button>
+                      <Button icon={<GoCloudDownload width={35} height={35} />} addClass='rounded-l-full rounded-r-full hover:bg-secondary' onClick={() => ''}>Resume</Button>
 
                   </div>
                   <div className='md:hidden right-0 col-start-10 font-Poppins col-end-12 font-medium flex justify-end items-center'>
-                      <GiHamburgerMenu className=' cursor-pointer text-secondary w-8 md:w-44 h-auto' />
+                      <GiHamburgerMenu className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />
 
                   </div>
+               
+                      
+              
         </nav>
+        {/* mobile Navigation */}
+            
     </header>
     </>
   )

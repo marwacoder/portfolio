@@ -7,12 +7,14 @@ export interface Layout {
 export interface IButton {
   children: string,
   addClass: string,
-  onClick: ReactEventHandler
+  onClick: ReactEventHandler,
+  icon: ReactElement
 }
 
 export interface IInputField{
   elementType: string,
   valueType: string,
   value: string,
-  label: string
+  label: string,
+  changed: ReactEventHandler
 }
