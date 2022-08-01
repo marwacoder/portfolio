@@ -2,7 +2,8 @@ import React,{useState, useEffect} from 'react'
 import Image from 'next/image'
 import Button from './misc/Button'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { GoCloudDownload } from 'react-icons/go'
+import { GoCloudDownload, } from 'react-icons/go'
+import { AiOutlineClose } from 'react-icons/ai'
 
 
 // Import react scroll
@@ -19,10 +20,13 @@ export default function Header() {
             setScrollActive(window.scrollY > 5);
         });
     }, []);
+
+    const handleDrawer=()=> setOpen(!open)
+    console.log(open)
   return (
     <>
           
-          <header className={"fixed top-0 md:backdrop-blur-none backdrop-blur-sm bg-white/30 bottom-0 w-full md:bottom-auto z-30 bg-gradient-to-r from-sky-blue to-white font-Poppins transition-all" +
+          <header className={`fixed top-0 md:backdrop-blur-none backdrop-blur-sm bg-white/30 ${open && 'bottom-0'} w-full md:bottom-auto z-30 bg-gradient-to-r from-sky-blue to-white font-Poppins transition-all` +
               (scrollActive ? " shadow-md pt-0" : " pt-4")}>
           <nav className='max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4'>
               <div className=" w-32 md:w-40 h-auto">
@@ -30,7 +34,7 @@ export default function Header() {
               </div>
               
                   
-            <ul className='block md:flex absolute font-bold md:font-normal md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center'>
+                  <ul className={`${open ? 'block': 'hidden'} md:flex absolute font-bold md:font-normal md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center`}>
                 <LinkScroll
               activeClass="active"
               to="aboutme"
@@ -124,7 +128,7 @@ export default function Header() {
 
                   </div>
                   <div className='md:hidden right-0 col-start-10 font-Poppins col-end-12 font-medium flex justify-end items-center'>
-                      <GiHamburgerMenu className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />
+                      {open ? <AiOutlineClose onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' /> : <GiHamburgerMenu onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />}
 
                   </div>
                
