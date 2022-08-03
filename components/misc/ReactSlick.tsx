@@ -2,7 +2,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import React,{useState} from 'react'
 
-import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
+import { MdNavigateNext, MdNavigateBefore } from 'react-icons/md'
 import Slider from "react-slick";
 
 
@@ -102,13 +102,13 @@ export default function ReactSlick() {
                 return (
                     <div key={i} className="px-3 text-left font-Poppins text-sm md:text-md lg:text-lg">
                         <div className="border-2 border-secondary transition-all rounded-lg p-5 flex flex-col">
-                    <div className=' md:text-xl font-bold '>{ex.company_name}</div>
-                    <div className=' text-secondary'>
+                    <div className=' text-base md:text-xl font-bold '>{ex.company_name}</div>
+                    <div className=' text-sm md:text-lg text-secondary'>
                      <div className='font-medium'>{ex.role}</div>
-                    <div>{ex.period}</div>   
+                    <div >{ex.period}</div>   
                     </div>
                     
-                    <div>{ex.description}</div>
+                            <div className='text-xs md:text-base'>{ex.description}</div>
                     
                     </div>
                  
@@ -126,14 +126,14 @@ export default function ReactSlick() {
                       className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickPrev}
                   >
-                      <GrFormPrevious className='h-8 w-8 text-secondary' />
+                      <MdNavigateNext className='h-8 w-8 text-secondary' />
                   </div>
                   
                   <div
                       className="flex items-center mx-4 justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickNext}
                   >
-                      <GrFormNext className='h-8 w-8 text-secondary'/>
+                      <MdNavigateBefore className='h-8 w-8 text-secondary'/>
 
                   </div>
                   {/* <hr className='bg-secondary border-2 w-full' /> */}

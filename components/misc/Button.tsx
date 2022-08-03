@@ -4,13 +4,12 @@ import {IButton} from '../../typings'
 
 export default function CustomButton({onClick, addClass, children, icon}:IButton) {
   return (
-    <>
-    <button  onClick={onClick} className={`font-medium flex items-center tracking-wide py-2 px-5 sm:px-8 border border-secondary  outline-none capitalize   transition-all hover:shadow-primary ${addClass}`}>
-      
-        {children}{" "}{icon}
-        
+    <div className={`flex items-center justify-center space-x-2 text-secondary hover:text-white-500  transition-all hover:bg-secondary hover:shadow-primary font-normal text-sm md:text-lg   tracking-wide py-2 md:px-3 border border-secondary  outline-none capitalize ${addClass}`}>
+    <button  onClick={onClick}>
+        {children}
     </button>
-    </>
+      {icon}
+    </div>
   )
 
 }

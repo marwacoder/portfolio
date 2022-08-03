@@ -8,7 +8,7 @@ export interface IButton {
   children: string,
   addClass: string,
   onClick: ReactEventHandler,
-  icon: ReactElement
+  icon?: ReactElement
 }
 
 export interface IInputField{
@@ -17,4 +17,10 @@ export interface IInputField{
   value: string,
   label: string,
   changed: ReactEventHandler
+}
+
+export interface Icontact{
+  name: string,
+  email: string,
+  message: string
 }

@@ -1,8 +1,10 @@
-import React,{useState} from 'react'
+import React,{useState, useCallback} from 'react'
 import { MdEmail, MdCall } from 'react-icons/md'
 import { ImLocation2 } from 'react-icons/im'
 import Input from './misc/Input'
 import Button from './misc/Button'
+import * as typings from '../typings'
+import events from 'events';
 
 export default function Contact() {
 
@@ -13,14 +15,16 @@ export default function Contact() {
   }])
 
 
-  function onChangeHandler(){
-
-  }
+  const onChangeHandler = useCallback(()=>{
+    //[e.target.name] = e.target.value
+   
+  },[])
+  
   return (
       <div className=" font-Poppins" id="contact">
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
       <div className="flex flex-col w-full my-10">
-      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
+          <h3 className="text-base md:text-2xl font-bold  leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
         Contact me
       </h3>
       </div>
@@ -41,7 +45,7 @@ export default function Contact() {
             <h2>+234 8034074748, +234 7082227861</h2>
           </div>
         </div>
-        <div>
+        <div className='pt-5'>
           
             <form >
               <Input changed={onChangeHandler} elementType='input' value='' valueType='' label='Enter Full Name' />

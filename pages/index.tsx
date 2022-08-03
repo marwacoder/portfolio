@@ -6,18 +6,21 @@ import Education from '../components/Education';
 import Layout from '../components/Layout'
 import Portfolio from '../components/Portfolio';
 import Resume from '../components/Resume';
-
+import {motion} from 'framer-motion'
 
 
 
 const Home: NextPage = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       <Head>
         <title>jibril&#39;s portfolio</title>
         <link rel="icon" href="/assets/icons/icon.ico" />
       </Head>
-      <div className='bg-gradient-to-r from-sky-blue to-to-white'>
     <Layout>
         <About/>
         <Resume/>
@@ -25,8 +28,8 @@ const Home: NextPage = () => {
         <Education/>
         <Contact/>
     </Layout>
-      </div>
-    </>
+  
+    </motion.div>
   )
 }
 

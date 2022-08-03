@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Button from './misc/Button'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GoCloudDownload, } from 'react-icons/go'
-import { GrClose } from 'react-icons/gr'
+import { VscChromeClose }  from 'react-icons/vsc'
 
 
 // Import react scroll
@@ -22,11 +22,11 @@ export default function Header() {
     }, []);
 
     const handleDrawer=()=> setOpen(!open)
-    console.log(open)
+    
   return (
     <>
           
-          <header className={`fixed top-0 md:backdrop-blur-none backdrop-blur-sm bg-white/30 ${open && 'bottom-0'} w-full md:bottom-auto z-30 bg-gradient-to-r from-sky-blue to-white font-Poppins transition-all` +
+          <header className={`fixed top-5 md:backdrop-blur-none backdrop-blur-sm bg-white/30 ${open && 'bottom-0'} left-10 right-10 border rounded-3xl md:bottom-auto z-30 font-Poppins transition-all` +
               (scrollActive ? " shadow-md pt-0" : " pt-4")}>
           <nav className='max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4'>
               <div className=" w-32 md:w-40 h-auto">
@@ -34,7 +34,7 @@ export default function Header() {
               </div>
               
                   
-                  <ul className={`${open ? 'block': 'hidden'} md:flex absolute font-bold md:font-normal md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center`}>
+                  <ul className={`${open ? 'block': 'hidden'} text-xl md:text-base md:flex absolute font-bold md:font-bold md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center`}>
                 <LinkScroll
               activeClass="active"
               to="aboutme"
@@ -116,19 +116,19 @@ export default function Header() {
                           <p><span className='text-secondary py-2'>Say </span> Hello!</p>
                           <p className='py-2'>jibrilmohammed39@gmail.com</p>
                           <div className='  my-10'>
-                              <Button icon={<GoCloudDownload width={35} height={35} />} addClass=' rounded-none bg-primary  text-secondary' onClick={() => ''}>Resume</Button>
+                              <Button icon={<GoCloudDownload width={35} height={35} className='mx-2' />} addClass=' rounded-none bg-primary  text-secondary' onClick={() => ''}>My Resume</Button>
 
                           </div>
             </div>
                       
             </ul>
             
-                  <div className="hidden col-start-10 font-Poppins col-end-12 font-medium md:flex justify-end items-center">
-                      <Button icon={<GoCloudDownload width={35} height={35} />} addClass='rounded-l-full rounded-r-full hover:bg-secondary' onClick={() => ''}>Resume</Button>
+                  <div className="hidden col-start-10   font-medium md:flex ">
+                      <Button icon={<GoCloudDownload width={35} height={35} />} addClass='rounded-full' onClick={() => ''}>My Resume</Button>
 
                   </div>
                   <div className='md:hidden right-0 col-start-10 font-Poppins col-end-12 font-medium flex justify-end items-center'>
-                      {open ? <GrClose onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' /> : <GiHamburgerMenu onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />}
+                      {open ? <VscChromeClose onClick={handleDrawer} className=' cursor-pointer  text-secondary w-6 md:w-44 h-auto' /> : <GiHamburgerMenu onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />}
 
                   </div>
                
