@@ -115,12 +115,12 @@ export default function Header() {
                       <div className='md:hidden list-item px-4 text-primary py-9 mx-2 cursor-pointer animation-hover  relative'>
                           <p><span className='text-secondary py-2'>Say </span> Hello!</p>
                           <p className='py-2'>jibrilmohammed39@gmail.com</p>
-                          <div className=' flex items-center justify-center  my-10'>
-                              <Button icon={<GoCloudDownload width={35} height={35} className='' />} addClass='rounded-none bg-primary  text-secondary' onClick={() => ''}>My Resume</Button>
-
-                          </div>
+                          
             </div>
-                      
+                      <div className='md:hidden flex items-center justify-center '>
+                          <Button icon={<GoCloudDownload width={35} height={35} />} addClass=' max-w-lg rounded-none border-none bg-primary  text-secondary' onClick={() => ''}>My Resume</Button>
+
+                      </div>      
             </ul>
             
                   <div className="hidden col-start-10   font-medium md:flex ">

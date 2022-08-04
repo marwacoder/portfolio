@@ -31,7 +31,7 @@ export default function About() {
             
         <Image alt='pic'  src='/assets/images/image.png' width={'878px'} height={'1058px'}/>
         </div>
-          <div className='h-40 w-16  md:h-35 md:h-35 gap-5 flex-col  shadow-lg bg-secondary ml-80 md:ml-80 -mt-44 lg:ml-96  z-20  flex justify-center items-center rounded-full'>
+          <div className='h-40 w-16  md:h-35 md:h-35 gap-5 flex-col  shadow-lg bg-secondary xs:ml-72 sm:ml-80 md:ml-80 -mt-44 lg:ml-96  z-20  flex justify-center items-center rounded-full'>
             <FaGithub className=' cursor-pointer h-6 w-6 text-white-500'/>
             <FaLinkedin className='cursor-pointer h-6 w-6 text-white-500' />
             <FaGitlab className='cursor-pointer h-6 w-6 text-white-500' />
