@@ -100,7 +100,7 @@ export default function ReactSlick() {
                     <div >{ex.period}</div>   
                     </div>
                     
-                            <div className=' text-sm md:text-base'>{ex.description}</div>
+                            <div className=' text-md md:text-base'>{ex.description}</div>
                     
                     </div>
                  
