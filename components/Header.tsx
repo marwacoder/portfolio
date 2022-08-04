@@ -37,7 +37,7 @@ export default function Header() {
               </div>
               
                      
-                  <ul className={`${open ? 'block': 'hidden'} text-base md:text-base md:flex absolute font-bold md:font-bold md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center`}>
+                  <ul className={`${open ? 'block': 'hidden'} text-base md:text-base lg:flex absolute font-bold md:font-bold md:relative top-48 md:top-auto md:col-start-4 text-primary col-end-3 md:items-center`}>
                 <LinkScroll
               activeClass="active"
               to="aboutme"
@@ -121,18 +121,18 @@ export default function Header() {
                           <p className='py-2'>jibrilmohammed39@gmail.com</p>
                           
             </div>
-                      <div className='md:hidden flex items-center justify-center '>
+                      <div className='lg:hidden flex items-center justify-center '>
                           <Button icon={<GoCloudDownload width={35} height={35} />} addClass=' max-w-lg rounded-none border-none bg-primary  text-secondary' onClick={() => ''}>My Resume</Button>
 
                       </div>      
             </ul>
                   
-                  <div className="hidden col-start-10   font-medium md:flex ">
+                  <div className="hidden col-start-10   font-medium lg:flex ">
                       <Button icon={<GoCloudDownload width={35} height={35} />} addClass='rounded-full' onClick={() => ''}>My Resume</Button>
 
                   </div>
-                  <div className='md:hidden right-0 col-start-10 font-Poppins col-end-12 font-medium flex justify-end items-center'>
-                          {open ? <CgClose onClick={handleDrawer} className=' cursor-pointer  text-secondary w-6 md:w-44 h-auto' /> : <GiHamburgerMenu onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 md:w-44 h-auto' />}
+                  <div className='lg:hidden right-0 col-start-10 font-Poppins col-end-12 font-medium flex justify-end items-center'>
+                          {open ? <CgClose onClick={handleDrawer} className=' cursor-pointer  text-secondary w-6 lg:w-44 h-auto' /> : <GiHamburgerMenu onClick={handleDrawer} className=' cursor-pointer text-secondary w-6 lg:w-44 h-auto' />}
 
                   </div>
                
