@@ -9,8 +9,8 @@ export default function Education() {
                       Education
                   </h3>
               </div>
-              <div className='text-left text-base md:text-xl gap-5 py-3'>
-                  <div className='  font-bold '>Ahmadu Bello University</div>
+              <div className='text-left text-sm md:text-base gap-5 py-3'>
+                  <div className='  font-bold  md:text-lg'>Ahmadu Bello University</div>
                   <div className='  text-secondary'>Bsc in Computer Science</div>
                   <div className='  '>2017 - 2021</div>
               </div>

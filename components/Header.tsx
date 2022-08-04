@@ -34,7 +34,7 @@ export default function Header() {
               </div>
               
                   
-                  <ul className={`${open ? 'block': 'hidden'} text-xl md:text-base md:flex absolute font-bold md:font-bold md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center`}>
+                  <ul className={`${open ? 'block': 'hidden'} text-base md:text-base md:flex absolute font-bold md:font-bold md:relative top-48 md:top-auto lg:flex md:col-start-4 text-primary col-end-3 md:items-center`}>
                 <LinkScroll
               activeClass="active"
               to="aboutme"
@@ -115,8 +115,8 @@ export default function Header() {
                       <div className='md:hidden list-item px-4 text-primary py-9 mx-2 cursor-pointer animation-hover  relative'>
                           <p><span className='text-secondary py-2'>Say </span> Hello!</p>
                           <p className='py-2'>jibrilmohammed39@gmail.com</p>
-                          <div className='  my-10'>
-                              <Button icon={<GoCloudDownload width={35} height={35} className='mx-2' />} addClass=' rounded-none bg-primary  text-secondary' onClick={() => ''}>My Resume</Button>
+                          <div className=' flex items-center justify-center  my-10'>
+                              <Button icon={<GoCloudDownload width={35} height={35} className='mx-2' />} addClass='rounded-none bg-primary  w-full text-secondary' onClick={() => ''}>My Resume</Button>
 
                           </div>
             </div>
