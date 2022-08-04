@@ -17,11 +17,11 @@ export default function About() {
     <div className="max-w-screen-xl mt-36 mb-12 px-8 xl:px-16 mx-auto font-Poppins" id="aboutme">
           <div className='grid grid-cols-1 md:grid-cols-2 '>
               <div className='leading-normal'>
-                  <div className=' py-2 md:py-5 lg:pt-10 '><h3 className='text-secondary md:text-5xl'>Hi, i&#39;m</h3>
-            <h2 className='font-bold text-sm md:text-4xl text-primary'><span className='text-secondary '>Jibril</span> Mohammed</h2></div>
+          <div className=' py-2 md:py-5 lg:pt-10 '><h3 className='text-secondary text-md md:text-5xl'>Hi, i&#39;m</h3>
+            <h2 className='font-bold text-md md:text-4xl text-primary'><span className='text-secondary '>Jibril</span> Mohammed</h2></div>
                   <div className='text-primary'>
             <h1 className='text-primary text-xl font-bold md:text-5xl '>Software Engineer</h1>
-            <h4 className=' pt-5 text-sm md:text-xl'>Dedicated software engineer with 4+ years of commercial application development expertise.To produce creative and cutting-edge business solutions for the amazing suite of clients inside its worldwide reach, I&#39;m eager to join a growing team. In prior jobs, I reduced downtime by 25% and secured 98 percent project completion on schedule. In addition, a substantial process bottleneck was found and overcome, resulting in a 35 percent increase in coding efficiency.</h4>
+            <h4 className=' pt-5 text-md md:text-xl'>Dedicated software engineer with 4+ years of commercial application development expertise.To produce creative and cutting-edge business solutions for the amazing suite of clients inside its worldwide reach, I&#39;m eager to join a growing team. In prior jobs, I reduced downtime by 25% and secured 98 percent project completion on schedule. In addition, a substantial process bottleneck was found and overcome, resulting in a 35 percent increase in coding efficiency.</h4>
 
                   </div>
                   </div>

@@ -64,15 +64,7 @@ export default function ReactSlick() {
         slidesToShow: 3,
         slidesToScroll: 2,
         responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
+            
             {
                 breakpoint: 767,
                 settings: {
@@ -103,7 +95,7 @@ export default function ReactSlick() {
                     <div key={i} className="px-3 text-left font-Poppins text-sm md:text-md lg:text-lg">
                         <div className="border-2 border-secondary transition-all rounded-lg p-5 flex flex-col">
                     <div className=' text-base md:text-xl font-bold '>{ex.company_name}</div>
-                    <div className=' text-sm md:text-lg text-secondary'>
+                    <div className=' text-md md:text-lg text-secondary'>
                      <div className='font-medium'>{ex.role}</div>
                     <div >{ex.period}</div>   
                     </div>
