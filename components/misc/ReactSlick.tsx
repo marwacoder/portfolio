@@ -74,7 +74,7 @@ export default function ReactSlick() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,

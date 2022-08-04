@@ -27,7 +27,7 @@ export default function About() {
                   </div>
         <div className=' '>
            
-          <div className=' max-w-fit -z-20 md:max-w-md relative'>
+          <div className=' -z-20 md:max-w-md relative'>
             
         <Image alt='pic'  src='/assets/images/image.png' width={'878px'} height={'1058px'}/>
         </div>
