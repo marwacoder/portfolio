@@ -126,14 +126,14 @@ export default function ReactSlick() {
                       className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickPrev}
                   >
-                      <MdNavigateNext className='h-8 w-8 text-secondary' />
+                      <MdNavigateNext className='h-8 w-8 hover:text-white-500 text-secondary' />
                   </div>
                   
                   <div
                       className="flex items-center mx-4 justify-center h-14 w-14 rounded-full bg-white border-secondary border hover:bg-secondary hover:text-white-500 transition-all text-secondary cursor-pointer"
                       onClick={sliderRef?.slickNext}
                   >
-                      <MdNavigateBefore className='h-8 w-8 text-secondary'/>
+                      <MdNavigateBefore className='h-8 w-8 hover:text-white-500 text-secondary'/>
 
                   </div>
                   {/* <hr className='bg-secondary border-2 w-full' /> */}
